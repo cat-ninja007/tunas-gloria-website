@@ -14,32 +14,33 @@ const navigationItems = [
     label: 'About',
     children: [
       { label: 'About Us', href: '/about' },
-      { label: 'Our History', href: '/about/history' },
-      { label: 'Our Network', href: '/about/network' },
-      { label: 'Our Campuses', href: '/about/campuses' },
+      { label: 'Our History', href: '/about' },
+      { label: 'Our Network', href: '/our-network' },
+      { label: 'Our Campuses', href: '/our-campus' },
     ],
   },
   {
     label: 'Admission',
     children: [
-      { label: 'Registration', href: '/admission/registration' },
-      { label: 'Visit SDH', href: '/admission/visit' },
+      { label: 'Registration', href: '/admission' },
+      { label: 'Visit Tunas Gloria', href: '/admission' },
     ],
   },
   {
     label: 'Teaching & Learning',
     children: [
       { label: 'Academic Overview', href: '/academic' },
-      { label: 'Kindergarten', href: '/academic/kindergarten' },
-      { label: 'Primary School', href: '/academic/primary' },
-      { label: 'Junior School', href: '/academic/junior' },
-      { label: 'Senior School', href: '/academic/senior' },
-      { label: 'Elective Class', href: '/academic/elective' },
+      { label: 'Teaching & Learning', href: '/teaching-learning' },
+      { label: 'Kindergarten', href: '/kindergarten' },
+      { label: 'Primary School', href: '/primary-school' },
+      { label: 'Junior School', href: '/junior-school' },
+      { label: 'Senior School', href: '/senior-school' },
+      { label: 'Elective Class', href: '/after-school-activities' },
     ],
   },
   {
     label: 'Community in Action',
-    href: '/community',
+    href: '/community-in-action',
   },
   {
     label: 'News & Event',
@@ -47,7 +48,7 @@ const navigationItems = [
   },
   {
     label: 'Our Voices',
-    href: '/voices',
+    href: '/our-voices',
   },
 ]
 
