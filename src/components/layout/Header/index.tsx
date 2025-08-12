@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { MobileMenu } from './MobileMenu'
 import { DesktopMenu } from './DesktopMenu'
 import { useHeaderScroll } from '@/hooks/useHeaderScroll'

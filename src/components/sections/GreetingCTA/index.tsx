@@ -1,8 +1,6 @@
-// src/components/sections/GreetingCTA.tsx
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, MapPin } from 'lucide-react'
 

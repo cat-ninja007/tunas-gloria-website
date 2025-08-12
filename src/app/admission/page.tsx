@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Hero from "@/components/global/Hero";
+
 
 
 export const metadata = {
@@ -29,23 +31,11 @@ export default function AdmissionPage() {
   return (
     <>
       {/* SECTION 1 : HERO */}
-      <section className="relative pt-36 pb-24 md:pt-44 md:pb-32">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/40 z-10" />
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero/admission.jpg')" }}
-        />
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
-              Admission
-            </h1>
-            <p className="mt-8 text-lg md:text-xl text-white/90 leading-relaxed">
-              We welcome you to be part of the Tunas Gloria community. Enrol now!
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero
+        title="Admission"
+        subtitle="We welcome you to be part of the Tunas Gloria community. Enrol now!."
+        img="/hero/admission.jpg"
+      />
 
       {/* SECTION 2 : REGISTRATION */}
       <section className="py-16 md:py-24 bg-white">
