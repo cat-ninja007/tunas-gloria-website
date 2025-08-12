@@ -74,25 +74,32 @@ export function Header() {
             {/* Logo and Navigation Container */}
             <div className="flex flex-col items-center space-y-4">
               {/* Logo */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="flex items-center space-x-3"
-              >
-                <Image
-                  src="/logo/tunas-gloria-logo.png"
-                  alt="Tunas Gloria School"
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                  priority
-                />
-                <div>
-                  <h1 className={`text-2xl font-bold transition-colors duration-300 ${textColor}`}>Tunas Gloria</h1>
-                  <p className={`text-sm transition-colors duration-300 ${subTitleColor}`}>Christian School</p>
-                </div>
-              </motion.div>
+              <Link
+                  href={'/'}
+                  className={`transition-colors duration-300 ${textColor}`}
+                >
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="flex items-center space-x-3"
+                >
+                  
+                  <Image
+                    src="/logo/tunas-gloria-logo.png"
+                    alt="Tunas Gloria School"
+                    width={60}
+                    height={60}
+                    className="rounded-full"
+                    priority
+                  />
+                  <div>
+                    <h1 className={`text-2xl font-bold transition-colors duration-300 ${textColor}`}>Tunas Gloria</h1>
+                    <p className={`text-sm transition-colors duration-300 ${subTitleColor}`}>Christian School</p>
+                  </div>
+                  
+                </motion.div>
+              </Link>
 
               {/* Desktop Navigation */}
               <DesktopMenu items={navigationItems} isScrolled={isScrolled} />
