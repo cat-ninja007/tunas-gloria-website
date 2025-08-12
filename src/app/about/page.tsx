@@ -62,6 +62,50 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* SECTION 3 : HISTORY */}
+      <section className="py-16 md:py-24 bg-yellow-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* image placeholder */}
+            <div className="md:col-span-5 lg:col-span-4">
+              <Image
+                src="/dummy-hero.jpg"
+                alt="SDH History"
+                width={512}
+                height={512}
+                className="rounded-lg object-cover w-full h-full"
+              />
+            </div>
+
+            {/* text */}
+            <div className="md:col-span-7 lg:col-span-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                History
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The founding members envisioned quality education for Indonesian children through three tiers: 10 international Sekolah Pelita Harapan units, 100 national Sekolah Dian Harapan units, and 1,000 subsidized Sekolah Lentera Harapan units across Indonesia.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Sekolah Dian Harapan provides holistic transformational education based on an enriched national curriculum, aiming to develop students as change agents. The word “Dian” means “an apparatus that gives off light”, envisioning SDH as a source of Hope and Light for Indonesia’s educational future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4 : BIBLE VERSE */}
+      <section className="py-16 md:py-24 bg-gray-900 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Bible Verse About Education</h2>
+          <blockquote className="text-xl md:text-2xl italic leading-relaxed">
+            “Train up a child in the way he should go; even when he is old he will not depart from it.”
+          </blockquote>
+          <cite className="mt-4 block text-yellow-400 font-semibold">
+            — Proverbs 22:6
+          </cite>
+        </div>
+      </section>
     
     </>
   );
